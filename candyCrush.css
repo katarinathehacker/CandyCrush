@@ -1,0 +1,79 @@
+/* Minimal reset: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+
+body{
+    background-image: url(bilder/candyCrushBakgrunn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#tekst{
+    color: white;
+    text-align: center;
+}
+
+#restartKnapp {
+    display: none;
+}
+
+#overlayWrapper {
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+    width: 450px;
+}
+#overlay {
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* Her kommer stylingen til rammen */
+
+#tavle{
+    border: 5px solid slategray;
+    box-sizing: border-box;
+    height: 450px;
+    width: 450px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    gap: 0;
+}
+#tavle img{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.regelBoks{
+    margin: 50px auto;
+    width: 450px;
+    text-align: center;
+}
+#regelTekst {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+
+/* Her kommer stylingen til det som er inni rammen */
+
+/* End minimal CSS Reset */

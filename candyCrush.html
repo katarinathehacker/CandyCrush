@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Crush</title>
+    <link rel="stylesheet" href="candyCrush.css">
+    <script src="candyCrush.js"></script>
+</head>
+<body>
+
+
+<div id="tekst">
+    <h1> Score: <span id="score"> 0 </span></h1>
+    <h2>Klokke: </h2>
+    <p id="timer"></p>
+    <button onclick="onStart()" id="startKnapp">Start spill</button>
+    <button onclick="onRestart()" id="restartKnapp">Start spill på nytt</button>
+</div>
+
+<div id="overlayWrapper">
+    <div id="overlay"></div>
+</div>
+<div id="tavle"></div>
+
+
+
+<div class="regelBoks">
+    <button onclick="Regler()">Spilleregler</button>
+    <p id="regelTekst" style="display: none">
+        Spillet foregår på følgende måte. Flytt godteriene slik at du får 3 på rad, det kan både være vannrett og loddrett og du vil få +55 i score. Du har 30 sek på deg. Hvor god er du?
+    </p>
+</div>
+
+
+</body>
+</html>
